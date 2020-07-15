@@ -1,6 +1,7 @@
 # flower-image-classifier
 
 Link to download database: http://www.robots.ox.ac.uk/~vgg/data/flowers/102/102flowers.tgz
+
 Link to download checkpoint for predict.py: https://www.dropbox.com/s/mk8lmff8qilsanr/checkpoint.pth?dl=0
 
 Jupyter notebook: All cell can be run in sequence and the requirements are completed step by step.
