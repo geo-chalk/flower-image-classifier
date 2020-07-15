@@ -185,6 +185,10 @@ def predict(image_path, model, device, top_k=1, cat_to_name=''):
     ax2.set_xlim((0, 1.1))
     xlabels = [f'{v}' for v in range(0,110,20)]
     plt.xticks(np.arange(0,1.1,0.2),xlabels)
+    for i in range(top_k):
+        string = '{:0.1f}%'.format(probabilities[i]*100)
+        plt.text(probabilities[i], i, string, va = 'center', color = 'black')
+
     ax2.invert_yaxis()  # labels read top-to-bottom
     ax2.set_xlabel('Prediction')
     ax2.set_title(f'Best Prediction: {labels[0]}')
