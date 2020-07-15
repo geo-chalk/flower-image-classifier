@@ -22,6 +22,7 @@ train.py: example python train.py flowers --arch vgg --lr 0.001 --units 2048 --e
     parser.add_argument('--print_graph', '-P', action='store_true')
 
 predict.py: example python predict.py flowers/test/1/image_06743.jpg checkpoint.pth --gpu --top_k 5 --category_names cat_to_name.json
+
     parser.add_argument('image_path', type = str, help = 'Path to image') 
     parser.add_argument('checkpoint', type = str, help = 'checkpoint save directory') 
     parser.add_argument('--top_k', '-T', type = int, default = 1, help = 'Top K most likely classes') 
