@@ -11,7 +11,7 @@ Use train.py to train a model and save a checkpoint. Use predict.py to make pred
 
 
 train.py: example python train.py flowers --arch vgg --lr 0.001 --units 2048 --epochs 5 --gpu
-    parser.add_argument('data', type = str, help = 'Path to data') 
+    *parser.add_argument('data', type = str, help = 'Path to data') 
     parser.add_argument('--save_dir', '-S', type = str, default = '', help = 'checkpoint save directory') 
     parser.add_argument('--arch', '-A', type = str, default = 'vgg', help = 'CNN Model Architecture') 
     parser.add_argument('--lr','-L',  type = float, default = 0.001, help = 'Learning rate for the network') 
