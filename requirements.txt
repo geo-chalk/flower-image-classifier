@@ -182,7 +182,7 @@ unicodecsv==0.14.1
 utm==0.4.2
 uvloop==0.8.1
 vega==0.4.4
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 widgetsnbextension==3.1.0
 wordcloud==1.4.1
 wptools==0.4.7
