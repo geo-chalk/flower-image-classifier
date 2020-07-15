@@ -168,5 +168,29 @@ def predict(image_path, model, device, top_k=1, cat_to_name=''):
         with open('cat_to_name.json', 'r') as f:
             cat_to_name = json.load(f)
         labels=[cat_to_name[i] for i in labels] 
-        
+
+
+    # Plot the image and probabilities
+    fig, (ax1, ax2) = plt.subplots(figsize=(15,6), ncols=2)
+    
+    #image = PIL.Image.open(image)
+    image = Image.open(image_path)
+    ax1.imshow(image)
+    label = image_path.split('/')[2]
+    ax1.set_title(f'Flower: {cat_to_name[str(label)]}')
+
+    ax2.barh(np.arange(top_k), probabilities)
+    ax2.set_yticks(np.arange(top_k))
+    ax2.set_yticklabels(labels)
+    ax2.set_xlim((0, 1.1))
+    xlabels = [f'{v}' for v in range(0,110,20)]
+    plt.xticks(np.arange(0,1.1,0.2),xlabels)
+    ax2.invert_yaxis()  # labels read top-to-bottom
+    ax2.set_xlabel('Prediction')
+    ax2.set_title(f'Best Prediction: {labels[0]}')
+    fig.tight_layout(pad=3.0)  
+
+    plt.show()        
     return probabilities, labels
+
+ 
