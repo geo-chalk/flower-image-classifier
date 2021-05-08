@@ -52,7 +52,7 @@ ecdsa==0.13
 entrypoints==0.2.3
 enum34==1.1.6
 et-xmlfile==1.0.1
-eventlet==0.22.0
+eventlet==0.31.0
 fastcache==1.0.2
 freezegun==0.3.11
 funcsigs==1.0.0
