@@ -95,7 +95,7 @@ jsonpickle==1.1
 jsonschema==2.6.0
 jupyter-client==5.2.4
 jupyter-core==4.4.0
-jupyterlab==0.35.4
+jupyterlab==1.2.21
 jupyterlab-server==0.2.0
 Keras==2.0.9
 kubernetes==9.0.0
