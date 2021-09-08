@@ -134,7 +134,7 @@ olefile==0.44
 ordereddict==1.1
 packaging==16.8
 pandas==0.23.3
-Pillow==4.2.1
+Pillow==8.3.2
 pygpu==0.7.5
 rsa==3.4.2
 ruamel-yaml==0.11.14
