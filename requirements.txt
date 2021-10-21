@@ -9,7 +9,7 @@ audioread==2.1.4
 av==0.3.3
 aws-xray-sdk==0.95
 awscli==1.16.17
-Babel==2.6.0
+Babel==2.9.1
 backcall==0.1.0
 backports.functools-lru-cache==1.4
 backports.weakref==1.0rc1
