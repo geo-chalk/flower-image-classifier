@@ -76,7 +76,7 @@ imageio==2.1.2
 imagesize==1.1.0
 inflection==0.3.1
 ipykernel==4.9.0
-ipython==6.5.0
+ipython==7.16.3
 ipython-genutils==0.2.0
 ipython-sql==0.3.9
 ipywidgets==7.0.5
